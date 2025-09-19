@@ -1,0 +1,64 @@
+@import url(reset.css);
+/* селектор атрибуту */
+[class*="__title"]{
+    color: orange;
+}
+/* хедер */
+
+.header img{
+    width: 100px;
+}
+.header__list .header__item {
+    color: blue;
+}
+/* хіро */
+
+.hero__text p span{
+    color: green;
+}
+/* культура */
+
+.culture__text > p {
+    color: purple;
+}
+
+.text.red{
+    color: red;
+}
+
+/* природа */
+
+.nature__text p{
+    color: salmon;
+}
+
+/* мова */
+
+.language p{
+    color: brown;
+}
+#text-green{
+    color: green;
+}
+
+/* карпати */
+
+.carpathians h3{
+    color: blue;
+}
+
+.carpathians p {
+    color: olive;
+}
+.carpathians span {
+    color: palevioletred;
+}
+
+/* кіт */
+
+.cat h3{
+    color: orangered;
+}
+.cat p{
+    color: blueviolet;
+}
