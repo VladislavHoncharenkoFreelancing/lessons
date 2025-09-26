@@ -106,6 +106,21 @@ body {
 .hero__uppercase {
    font-family: "Robotto", serif;
 }
+.dotted,
+.double,
+.dashed {
+   text-decoration: underline;
+   line-height: 1.4;
+}
+.dotted  {
+   text-decoration-style: dotted;
+}
+.double{
+      text-decoration-style: double;
+}
+.dashed {
+   text-decoration-style: dashed;
+}
 
 .ending {
    font-family: "Gambetta", serif;
