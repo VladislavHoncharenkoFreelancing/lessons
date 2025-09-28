@@ -17,6 +17,16 @@ body {
    font-size: 18px;
 }
 
+/* ============ header ============== */
+.header__logo {
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   line-height: 1.4;
+   font-size: 32px;
+   font-weight: 500;
+   color: brown;
+}
+
 /* ============= hero ================ */
 
 .hero__title {
