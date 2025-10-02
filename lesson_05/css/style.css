@@ -5,7 +5,7 @@
 /* файл підключення локальних шрифтів */
 @import url(fonts.css);
 
-[class*="__container"]{
+[class*="__container"] {
    max-width: 1200px;
    padding-left: 15px;
    padding-right: 15px;
@@ -18,10 +18,11 @@ body {
 }
 
 /* ============ header ============== */
-.header__list{
+.header__list {
    margin-top: 10px;
    margin-left: 10px;
 }
+
 .header__link {
    text-transform: uppercase;
    text-decoration: underline;
@@ -47,12 +48,13 @@ body {
 .hero__title {
    text-align: center;
    color: #2f302c;
-      font-size: 32px;
-      font-weight: 800;
-      line-height: 1.25; /* 40/32 */
-      text-transform: uppercase;
-      margin-top: 72px;
-      margin-bottom: 72px;
+   font-size: 32px;
+   font-weight: 800;
+   line-height: 1.25;
+   /* 40/32 */
+   text-transform: uppercase;
+   padding-top: 72px;
+   margin-bottom: 72px;
 }
 
 .hero__items {
@@ -119,6 +121,7 @@ body {
    background-color: #caccc5;
    margin-bottom: 24px;
 }
+
 .block1__text p,
 .block2__text p {
    color: #2f302c;
@@ -131,8 +134,9 @@ body {
 
 
 .block2__text {
-      overflow-y: auto;
+   overflow-y: auto;
 }
+
 .block2__text p {
    white-space: nowrap;
 }
@@ -146,7 +150,8 @@ body {
    background-color: #2a2101;
    margin-bottom: 40px;
 }
-.block3__text p{
+
+.block3__text p {
    color: #92c008;
    margin-bottom: 20px;
 }
@@ -159,14 +164,17 @@ body {
    padding: 30px 20px 50px 35px;
    margin-bottom: 50px;
 }
-.block4__text p{
+
+.block4__text p {
    margin-bottom: 12px;
 }
+
 /* =================== */
-.creative__galery{
+.creative__galery {
    margin-bottom: 32px;
 }
-.creative__galery img{
+
+.creative__galery img {
    max-width: 300px;
 }
 
@@ -175,6 +183,7 @@ body {
    margin-top: 10px;
    margin-left: 10px;
 }
+
 .footer__link {
    text-transform: uppercase;
    text-decoration: underline;
@@ -183,4 +192,3 @@ body {
    font-weight: 500;
    margin-bottom: 8px;
 }
-
