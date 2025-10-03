@@ -141,6 +141,17 @@ body {
 
 }
 
+.plan__title {
+   color: rgba(115, 115, 115, 1);
+   font-size: 24px;
+   font-weight: 500;
+   text-decoration: underline;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
 .plan__list {
    margin: 0 auto;
    max-width: 270px;
