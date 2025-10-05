@@ -84,7 +84,7 @@ body {
    padding-top: 115px;
    padding-bottom: 110px;
    max-width: 520px;
-   margin: 0 5px 0 auto;
+   margin: 0 0 0 auto;
 }
 
 .hero__sub-title {
@@ -250,6 +250,7 @@ body {
          rgba(255, 255, 255, 1) 2%, rgba(29, 96, 253, 1) 13%,
          rgba(105, 60, 5, 1) 27%, rgba(145, 247, 35, 0.91) 49%,
          rgba(145, 0, 0, 0.85) 70%, rgba(69, 252, 209, 0.75) 90%);
+   
 }
 
 .block4 {
@@ -257,6 +258,22 @@ body {
    border-radius: 16px;
    box-shadow: inset 6px 10px 10px 13px rgba(255, 255, 0, 0.877);
 }
+
+.block5 {
+   padding: 30px 300px;
+   background:
+      url("../img/bg/bg2.jpg") top left / contain no-repeat,
+      url("../img/bg/bg3.jpg") top right / contain no-repeat,
+      url("../img/bg/bg4.jpg") 50% / contain no-repeat;
+}
+
+.block5 p {
+   font-size: 22px;
+   font-weight: 500;
+   line-height: 1.2;
+   text-shadow: 1px 1px 1px #210808;
+}
+
 
 /* ============================ */
 
