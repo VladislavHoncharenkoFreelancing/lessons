@@ -36,6 +36,8 @@ body {
 
 .hero {
    font-family: "Lato", sans-serif;
+   padding-top: 72px;
+   padding-bottom: 72px;
 }
 
 .hero__container {
@@ -53,7 +55,6 @@ body {
    line-height: 1.25;
    /* 40/32 */
    text-transform: uppercase;
-   padding-top: 72px;
    margin-bottom: 72px;
 }
 
@@ -72,10 +73,12 @@ body {
 }
 
 .item-hero {
+   vertical-align: top;
    text-align: center;
 }
 
 .item-hero__image {
+   width: 60px;
    max-width: 100%;
    margin-bottom: 28px;
 }
