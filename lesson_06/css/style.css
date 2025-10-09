@@ -78,11 +78,12 @@ body {
 .hero__body {
    max-width: 1132px;
    margin: 0 auto;
+   padding-top: 115px;
+   padding-bottom: 110px;
 }
 
 .hero__content {
-   padding-top: 115px;
-   padding-bottom: 110px;
+
    max-width: 520px;
    margin: 0 0 0 auto;
 }
@@ -106,7 +107,7 @@ body {
    line-height: 1.1;
    /* 100/96 */
    text-transform: uppercase;
-   margin-bottom: 36px;
+   margin-bottom: 10px;
 }
 
 .hero__title span {
@@ -114,6 +115,9 @@ body {
 }
 
 .underline {
+   margin-bottom: 36px;
+   height: 1px;
+   max-width: 308px;
    font-weight: 700;
    border-bottom: 1px solid #2f302c;
 
@@ -250,7 +254,7 @@ body {
          rgba(255, 255, 255, 1) 2%, rgba(29, 96, 253, 1) 13%,
          rgba(105, 60, 5, 1) 27%, rgba(145, 247, 35, 0.91) 49%,
          rgba(145, 0, 0, 0.85) 70%, rgba(69, 252, 209, 0.75) 90%);
-   
+
 }
 
 .block4 {
