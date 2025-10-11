@@ -519,7 +519,9 @@ body {
    display: block;
 }
 
-.creative__block9-image {}
+.creative__block9-image {
+   max-width: 600px;
+}
 
 /* ======================================================= */
 .arrow-up::after {
