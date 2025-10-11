@@ -140,13 +140,6 @@ body {
 .plan__item {
    /* запобіжник */
    min-height: 32px;
-}
-
-.plan__item:not(:last-child) {
-   margin-bottom: 15px;
-}
-
-.plan__link {
    color: #252b42;
    font-size: 14px;
    font-family: "Montserrat", sans-serif;
@@ -154,10 +147,13 @@ body {
    line-height: 1.71;
    /* 24/14 */
    letter-spacing: .20000000298023224px;
-   padding-left: 10px;
-   padding-top: 4px;
-   padding-bottom: 4px;
 }
+
+.plan__item:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.plan__link {}
 
 .plan__item--active::before {
    content: "";
@@ -166,6 +162,7 @@ body {
    width: 32px;
    max-width: 100%;
    vertical-align: middle;
+   margin-right: 10px;
 }
 
 .plan__item--not-active::before {
@@ -175,6 +172,7 @@ body {
    width: 32px;
    max-width: 100%;
    vertical-align: middle;
+   margin-right: 10px;
 }
 
 /* ==================== game page ======================= */
