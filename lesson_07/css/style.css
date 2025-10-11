@@ -1,0 +1,535 @@
+/* файл скидання стилів */
+@import url(reset.css);
+/* файл підключення локальних шрифтів */
+@import url(fonts.css);
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: clip;
+}
+
+.wrapper>main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1920px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-size: 20px;
+}
+
+
+/* ================================= */
+
+.header {}
+
+.header__container,
+.footer__container {
+   padding-top: 16px;
+   padding-bottom: 16px;
+   /* background: #1a1919;
+   background: linear-gradient(27deg, rgba(26, 25, 25, 0.64) 0%,
+         rgba(74, 73, 73, 1) 10%,
+         rgba(95, 93, 93, 0.92) 25%,
+         rgba(99, 97, 97, 0.93) 19%,
+         rgba(92, 89, 89, 0.92) 29%,
+         rgba(115, 115, 115, 1) 40%,
+         rgba(92, 92, 92, 0.27) 51%,
+         rgba(122, 120, 120, 1) 61%,
+         rgba(135, 133, 133, 1) 72%,
+         rgba(173, 170, 170, 1) 81%,
+         rgba(212, 212, 212, 1) 92%,
+         rgba(194, 194, 194, 0.28) 100%); */
+
+}
+
+.header__nav,
+.footer__nav {
+   margin: 0 auto;
+   text-align: center;
+   padding: 22px;
+   background-color: #252b42;
+   border-radius: 32px;
+
+}
+
+.header__nav a:not(:last-child),
+.footer__nav a:not(:last-child) {
+   padding-right: 32px;
+
+}
+
+.header__logo,
+.footer__logo {
+   color: #fff;
+   font-size: 26px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   text-shadow: 3px 2px 3px #252b42;
+   padding-right: 32px;
+   transition: color 0.3s;
+}
+
+.header__logo:hover,
+.footer__logo:hover {
+   color: #666a7a
+}
+
+.header__link,
+.footer__link {
+   color: #fff;
+   font-size: 22px;
+   transition: color 0.3s;
+}
+
+.header__link:hover,
+.footer__link:hover {
+   color: #666a7a;
+   text-decoration: underline;
+}
+
+/* ================================== */
+.footer__container {}
+
+.footer__nav {}
+
+.footer__logo {}
+
+.footer__link {}
+
+/* ================================ */
+
+.plan {}
+
+.plan__container {
+   padding-top: 80px;
+   padding-bottom: 80px;
+
+}
+
+.plan__title {
+   color: rgba(115, 115, 115, 1);
+   font-size: 24px;
+   font-weight: 500;
+   text-decoration: underline;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   text-align: center;
+   margin-bottom: 50px;
+}
+
+.plan__card {
+   max-width: 350px;
+   margin: 0 auto;
+}
+
+.plan__list {
+   max-width: 400px;
+   padding-left: 16px;
+   padding-right: 16px;
+   margin-bottom: 16px;
+}
+
+.plan__item {
+   /* запобіжник */
+   min-height: 32px;
+}
+
+.plan__item:not(:last-child) {
+   margin-bottom: 15px;
+}
+
+.plan__link {
+   color: #252b42;
+   font-size: 14px;
+   font-family: "Montserrat", sans-serif;
+   font-weight: 600;
+   line-height: 1.71;
+   /* 24/14 */
+   letter-spacing: .20000000298023224px;
+   padding-left: 10px;
+   padding-top: 4px;
+   padding-bottom: 4px;
+}
+
+.plan__item--active::before {
+   content: "";
+   background: url("/img/learn/check-active.svg") 0 0 no-repeat;
+   height: 32px;
+   width: 32px;
+   max-width: 100%;
+   vertical-align: middle;
+}
+
+.plan__item--not-active::before {
+   content: "";
+   background: url("/img/learn/check-not-active.svg") 0 0 no-repeat;
+   height: 32px;
+   width: 32px;
+   max-width: 100%;
+   vertical-align: middle;
+}
+
+/* ==================== game page ======================= */
+
+.game {
+   padding: 30px;
+}
+
+.game__title {
+   line-height: 1.2;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   font-weight: 700;
+   font-size: 32px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.game__container {
+   width: 900px;
+   height: 800px;
+   padding: 0;
+   background: url(../img/fzoL.gif)0 0 / cover no-repeat;
+   /* background: #00ff19;
+   background: radial-gradient(circle, rgba(0, 255, 25, 1) 0%, rgba(225, 255, 0, 1) 10%, rgba(69, 231, 252, 1) 19%, rgba(69, 188, 252, 1) 26%, rgba(69, 215, 252, 1) 33%, rgba(252, 69, 240, 1) 39%, rgba(69, 252, 130, 1) 44%, rgba(252, 246, 69, 1) 51%, rgba(252, 170, 69, 1) 57%, rgba(188, 69, 252, 1) 63%, rgba(246, 69, 252, 1) 68%, rgba(252, 69, 206, 1) 74%, rgba(164, 69, 252, 1) 79%, rgba(69, 252, 237, 1) 84%, rgba(109, 252, 69, 1) 88%, rgba(218, 252, 69, 1) 92%, rgba(252, 154, 69, 1) 96%); */
+   border: 5px solid #252b42;
+}
+
+.game__body {}
+
+.game__block-header,
+.game__block-footer {
+   padding: 16px;
+   border: 5px solid rgb(0, 195, 255);
+   background-color: #252b42;
+}
+
+.game__block-header__title,
+.game__block-footer__title {
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 1.2;
+   color: #6c95cf;
+   text-align: center;
+}
+
+.game__link {
+   color: #4e5674;
+   transition: color 0.3s;
+}
+
+.game__link:hover {
+   text-decoration: underline;
+   color: #ff00d9;
+}
+
+
+.game__block2,
+.game__block3,
+.game__block4,
+.game__block5,
+.game__block6,
+.game__block7,
+.game__block8,
+.game__block9,
+.game__block10,
+.game__block11 {
+   visibility: hidden;
+   border: 2px solid rgb(0, 195, 255);
+   background-color: #252b42;
+}
+
+.game__block2:hover,
+.game__block3:hover,
+.game__block4:hover,
+.game__block5:hover,
+.game__block6:hover,
+.game__block7:hover,
+.game__block8:hover,
+.game__block9:hover,
+.game__block10:hover,
+.game__block11:hover {
+   visibility: visible;
+}
+
+.game__block1:hover+div,
+.game__block2:hover+div,
+.game__block3:hover+div,
+.game__block4:hover+div,
+.game__block5:hover+div,
+.game__block6:hover+div,
+.game__block7:hover+div,
+.game__block8:hover+div,
+.game__block9:hover+div,
+.game__block10:hover+div,
+.game__block11:hover+div {
+   visibility: visible;
+}
+
+
+.game__block1 {
+   margin-left: 450px;
+   width: 20px;
+   height: 80px;
+   border: 2px solid rgb(0, 195, 255);
+   background-color: #252b42;
+}
+
+.game__block2 {
+   margin-left: 450px;
+   width: 120px;
+   height: 20px;
+   border-radius:0 15px 0 15px ;
+}
+
+.game__block3 {
+   margin-left: 550px;
+   width: 20px;
+   height: 80px;
+}
+
+.game__block4 {
+   margin-left: 550px;
+   width: 190px;
+   height: 15px;
+   border-radius: 0 15px 0 15px;
+}
+
+.game__block5 {
+   margin-left: 725px;
+   width: 15px;
+   height: 140px;
+}
+
+.game__block6 {
+   margin-left: 540px;
+   width: 200px;
+   height: 15px;
+   border-radius: 15px 0 15px 0;
+}
+
+.game__block7 {
+   margin-left: 540px;
+   width: 15px;
+   height: 190px;
+}
+
+.game__block8 {
+   margin-left: 365px;
+   width: 190px;
+   height: 10px;
+   border-radius: 15px 0 15px 0;
+}
+
+.game__block9 {
+   margin-left: 365px;
+   width: 10px;
+   height: 60px;
+}
+
+.game__block10 {
+   margin-left: 365px;
+   width: 150px;
+   height: 10px;
+   border-radius: 0 15px 0 15px ;
+}
+
+.game__block11 {
+   margin-left: 507px;
+   width: 8px;
+   height: 35px;
+}
+
+.game__block-footer {
+   visibility: hidden;
+}
+
+
+/* ================================================================ */
+
+.creative {}
+
+.creative__container {}
+
+.creative__title {
+   font-size: 32px;
+   font-weight: 700;
+   text-align: center;
+}
+
+.creative__body {
+   padding: 16px;
+}
+
+.creative__body div:not(:last-child) {
+   margin-bottom: 16px;
+}
+
+.creative__block1 p:first-child {
+   color: #ff00d9;
+
+}
+
+.creative__block1 p:nth-child(3) {
+   color: #054ade;
+
+}
+
+.creative__block1 p:last-child {
+   color: #38c40a;
+
+}
+
+/* ========================================== */
+
+.creative__block2 p:first-of-type {
+   color: #ff00d9;
+
+}
+
+.creative__block2 p:nth-child(3n +1) {
+   color: #054ade;
+
+}
+
+.creative__block2 p:last-of-type {
+   color: #38c40a;
+
+}
+
+/* ============================================ */
+
+.creative__block3:has(h2) {
+   color: #ff0000;
+
+}
+
+/* ============================================= */
+
+.creative__block4 p:nth-child(odd) {
+   color: #d9ff00;
+
+}
+
+/* ============================================= */
+
+.creative__block5 p:nth-child(even) {
+   color: #cf8505;
+
+}
+
+/* ============================================== */
+
+.creative__block6 p:nth-child(n+5) {
+   text-decoration: underline;
+}
+
+/* =============================================== */
+
+.creative__block7 {}
+
+.block-list {}
+
+.block-list__item {
+   vertical-align: middle;
+   font-size: 20px;
+   line-height: 1.2;
+}
+
+.block-list__item:not(:last-child) {
+   margin-bottom: 16px;
+}
+
+.block-list__item::before {
+   content: "";
+   background-color: rgb(255, 89, 0);
+   border-radius: 50%;
+   width: 18px;
+   height: 18px;
+   margin-right: 10px;
+}
+
+.block-list__item::after {
+   content: "";
+   margin-left: 10px;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 10px 0 10px 20px;
+   border-color: transparent transparent transparent #a2ff00;
+
+}
+
+/* ======================================================= */
+.creative__block8{
+   padding: 48px;
+   background-color: #33a78e;
+   border-radius: 32px;
+}
+.creative__block8 a{
+   display: inline-block;
+   font-size: 22px;
+   line-height: 1.5;
+   transition: color 0.3s;
+}
+.creative__block8 a:hover:first-child {
+   color: #ff00d9;
+   text-decoration: underline;
+}
+
+.creative__block8 a:active:first-child {
+   background-color: #000000;
+}
+.creative__block8 a:hover:nth-child(2) {
+   color: #07ef22;
+   text-decoration: underline;
+}
+.creative__block8 a:visited:nth-child(2) {
+   color: #07ef22;
+}
+.creative__block8 a:hover:nth-child(3) {
+   color: #1400f2;
+   text-decoration: underline;
+}
+
+.creative__block8 a:focus:nth-child(3) {
+   outline: 3px solid red;
+}
+
+
+
+.creative__block9 {
+   display: none;
+}
+.creative__block9:target {
+   display: block;
+}
+
+.creative__block9-image{
+
+}
+/* ======================================================= */
+.arrow-up::after {
+   content: "";
+   transition: all 0.5s;
+}
+
+.arrow-up:hover::after {
+   content: "";
+   margin-left: 5px;
+   width: 0;
+   height: 0;
+   border-style: solid;
+   border-width: 10px 0 10px 20px;
+   border-color: transparent transparent transparent #ffffff;
+   rotate: -90deg;
+}
