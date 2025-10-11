@@ -161,7 +161,7 @@ body {
 
 .plan__item--active::before {
    content: "";
-   background: url("/img/learn/check-active.svg") 0 0 / cover no-repeat;
+   background: url("../img/learn/check-active.svg") 0 0 / cover no-repeat;
    height: 32px;
    width: 32px;
    max-width: 100%;
@@ -170,7 +170,7 @@ body {
 
 .plan__item--not-active::before {
    content: "";
-   background: url("/img/learn/check-not-active.svg") 0 0 / cover no-repeat;
+   background: url("../img/learn/check-not-active.svg") 0 0 / cover no-repeat;
    height: 32px;
    width: 32px;
    max-width: 100%;
