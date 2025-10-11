@@ -112,7 +112,6 @@ body {
 .plan__container {
    padding-top: 80px;
    padding-bottom: 80px;
-
 }
 
 .plan__title {
@@ -162,7 +161,7 @@ body {
 
 .plan__item--active::before {
    content: "";
-   background: url("/img/learn/check-active.svg") 0 0 no-repeat;
+   background: url("/img/learn/check-active.svg") 0 0 / cover no-repeat;
    height: 32px;
    width: 32px;
    max-width: 100%;
@@ -171,7 +170,7 @@ body {
 
 .plan__item--not-active::before {
    content: "";
-   background: url("/img/learn/check-not-active.svg") 0 0 no-repeat;
+   background: url("/img/learn/check-not-active.svg") 0 0 / cover no-repeat;
    height: 32px;
    width: 32px;
    max-width: 100%;
@@ -288,7 +287,7 @@ body {
    margin-left: 450px;
    width: 120px;
    height: 20px;
-   border-radius:0 15px 0 15px ;
+   border-radius: 0 15px 0 15px;
 }
 
 .game__block3 {
@@ -340,7 +339,7 @@ body {
    margin-left: 365px;
    width: 150px;
    height: 10px;
-   border-radius: 0 15px 0 15px ;
+   border-radius: 0 15px 0 15px;
 }
 
 .game__block11 {
@@ -470,17 +469,19 @@ body {
 }
 
 /* ======================================================= */
-.creative__block8{
+.creative__block8 {
    padding: 48px;
    background-color: #33a78e;
    border-radius: 32px;
 }
-.creative__block8 a{
+
+.creative__block8 a {
    display: inline-block;
    font-size: 22px;
    line-height: 1.5;
    transition: color 0.3s;
 }
+
 .creative__block8 a:hover:first-child {
    color: #ff00d9;
    text-decoration: underline;
@@ -489,13 +490,16 @@ body {
 .creative__block8 a:active:first-child {
    background-color: #000000;
 }
+
 .creative__block8 a:hover:nth-child(2) {
    color: #07ef22;
    text-decoration: underline;
 }
+
 .creative__block8 a:visited:nth-child(2) {
    color: #07ef22;
 }
+
 .creative__block8 a:hover:nth-child(3) {
    color: #1400f2;
    text-decoration: underline;
@@ -510,13 +514,13 @@ body {
 .creative__block9 {
    display: none;
 }
+
 .creative__block9:target {
    display: block;
 }
 
-.creative__block9-image{
+.creative__block9-image {}
 
-}
 /* ======================================================= */
 .arrow-up::after {
    content: "";
