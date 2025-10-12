@@ -1,0 +1,177 @@
+/* файл скидання стилів */
+@import url(reset.css);
+/* файл підключення локальних шрифтів */
+@import url(fonts.css);
+
+.wrapper {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   overflow: clip;
+}
+
+.wrapper>main {
+   flex-grow: 1;
+}
+
+[class*="__container"] {
+   max-width: 1420px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 0 auto;
+}
+
+body {
+   font-family: "Montserrat", sans-serif;
+   font-size: 20px;
+}
+
+
+/* ================================= */
+
+.header {}
+
+.header__container,
+.footer__container {
+   padding-top: 16px;
+   padding-bottom: 16px;
+
+}
+
+.header__nav,
+.footer__nav {
+   margin: 0 auto;
+   text-align: center;
+   padding: 22px;
+   background-color: #252b42;
+   border-radius: 32px;
+
+}
+
+.header__nav a:not(:last-child),
+.footer__nav a:not(:last-child) {
+   padding-right: 32px;
+
+}
+
+.header__logo,
+.footer__logo {
+   color: #fff;
+   font-size: 26px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   text-shadow: 3px 2px 3px #252b42;
+   padding-right: 32px;
+   transition: color 0.3s;
+}
+
+.header__logo:hover,
+.footer__logo:hover {
+   color: #666a7a
+}
+
+.header__link,
+.footer__link {
+   color: #fff;
+   font-size: 22px;
+   transition: color 0.3s;
+}
+
+.header__link:hover,
+.footer__link:hover {
+   color: #666a7a;
+   text-decoration: underline;
+}
+
+/* ================================== */
+.footer__container {}
+
+.footer__nav {}
+
+.footer__logo {}
+
+.footer__link {}
+
+.arrow-up{
+}
+.arrow-up::after {
+   content: "";
+   margin-left: 5px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 0 10px 20px;
+      border-color: transparent transparent transparent #ffffff;
+      rotate: -90deg;
+      opacity: 0;
+   transition: all 0.3s;
+}
+
+.arrow-up:hover::after {
+   content: "";
+      opacity: 1;
+}
+/* ================================ */
+.main__page{
+}
+.homework__container{
+   
+}
+.homework__body{
+   color: #fff;
+   padding: 42px;
+   background-color: #252b42;
+   border-radius: 32px;
+}
+
+.homework__body div:not(:last-child){
+   margin-bottom: 32px;
+}
+
+
+.homework__title {
+   text-align: center;
+   margin-bottom: 32px;
+   font-size: 34px;
+   font-weight: 700;
+   line-height: 1.2;
+}
+.homework__hero-picture{
+
+}
+
+.homework__hero-image {}
+
+.homework__text {
+   padding: 16px;
+   font-size: 22px;
+   font-weight: 500;
+   line-height: 1.3;
+}
+.homework__hero-image,
+.homework__practice-image,
+.homework__lessons-01,
+.homework__lessons-02,
+.homework__lessons-03,
+.homework__practice-image,
+.homework__lessons-01,
+.homework__lessons-02,
+.homework__lessons-03 {
+   border-radius: 33px;
+   overflow: hidden;
+}
+/* ======================================================= */
+.deco-bg {
+   height: 600px;
+   margin-bottom: 50px;
+}
+.deco-bg p {
+}
+
+.deco-bg p::before {
+   content: "";
+   background: url("../img/homework/yoga-deco-x1.webp") top right no-repeat;
+   rotate: 180deg;
+   width: 600px;
+   height: 600px;
+}
