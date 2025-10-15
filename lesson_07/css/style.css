@@ -131,48 +131,53 @@ body {
 }
 
 .plan__list {
-   max-width: 400px;
    padding-left: 16px;
    padding-right: 16px;
+}
+.plan__list:not(:last-child) {
    margin-bottom: 16px;
 }
 
 .plan__item {
-   /* запобіжник */
+   /* position: relative; */
+
    min-height: 32px;
    color: #252b42;
    font-size: 14px;
    font-family: "Montserrat", sans-serif;
    font-weight: 600;
    line-height: 1.71;
-   /* 24/14 */
    letter-spacing: .20000000298023224px;
+   /*  */
+   padding-left: 42px;
+   text-indent: -35px;
+   /*  */
 }
-
 .plan__item:not(:last-child) {
    margin-bottom: 15px;
 }
 
-.plan__link {}
-
-.plan__item--active::before {
-   content: "";
-   background: url("../img/learn/check-active.svg") 0 0 / cover no-repeat;
-   height: 32px;
-   width: 32px;
-   max-width: 100%;
-   vertical-align: middle;
-   margin-right: 10px;
-}
-
+.plan__item--active::before,
 .plan__item--not-active::before {
    content: "";
-   background: url("../img/learn/check-not-active.svg") 0 0 / cover no-repeat;
+   /*  */
+   /* position: absolute;
+   top: -3px;
+   left: 0; */
+   /*  */
+   vertical-align: top;
    height: 32px;
    width: 32px;
-   max-width: 100%;
-   vertical-align: middle;
    margin-right: 10px;
+
+}
+
+.plan__item--active::before{
+   background: url("../img/learn/check-active.svg") 0 0 / cover no-repeat;
+}
+.plan__item--not-active::before {
+   background: url("../img/learn/check-not-active.svg") 0 0 / cover no-repeat;
+   
 }
 
 /* ==================== game page ======================= */
@@ -230,7 +235,7 @@ body {
 }
 
 
-.game__block2,
+/* .game__block2,
 .game__block3,
 .game__block4,
 .game__block5,
@@ -243,9 +248,13 @@ body {
    visibility: hidden;
    border: 2px solid rgb(0, 195, 255);
    background-color: #252b42;
+} */
+.block{
+   visibility: hidden;
+      border: 2px solid rgb(0, 195, 255);
+      background-color: #252b42;
 }
-
-.game__block2:hover,
+/* .game__block2:hover,
 .game__block3:hover,
 .game__block4:hover,
 .game__block5:hover,
@@ -256,9 +265,13 @@ body {
 .game__block10:hover,
 .game__block11:hover {
    visibility: visible;
+} */
+
+.block:hover{
+   visibility: visible;
 }
 
-.game__block1:hover+div,
+/* .game__block1:hover+div,
 .game__block2:hover+div,
 .game__block3:hover+div,
 .game__block4:hover+div,
@@ -270,7 +283,14 @@ body {
 .game__block10:hover+div,
 .game__block11:hover+div {
    visibility: visible;
-}
+} */
+ .game__block1:hover+div,
+ .block:hover+div{
+   visibility: visible;
+ }
+/* .block:hover + div{
+   visibility: visible;
+} */
 
 
 .game__block1 {
