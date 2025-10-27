@@ -53,6 +53,7 @@ body {
 .nav-footer__item {
    display: inline-block;
 }
+
 .nav-header__item:not(:last-child),
 .nav-footer__item:not(:last-child) {
    margin-right: 22px;
@@ -67,10 +68,12 @@ body {
    position: relative;
    transition: color 0.3s;
 }
+
 .nav-header__link:hover,
 .nav-footer__link:hover {
    color: #2e7eed;
 }
+
 .nav-header__link::after,
 .nav-footer__link::after {
    content: "";
@@ -104,22 +107,27 @@ body {
 /* ================================= */
 .car {}
 
-.car__container {
+.car__container,
+.experiment__container {
    background-color: rgba(106, 106, 106, 0.374);
    border-radius: 32px;
    padding-top: 32px;
 }
-.car__title{
+
+.car__title,
+.experiment__title {
    font-size: 38px;
    font-weight: 700;
    color: #0749a5;
    text-align: center;
 }
+
 .car__details {
-   width: 1400px;
+   /* width: 1400px; */
    height: 600px;
    position: relative;
 }
+
 .car__details:hover {
    translate: -2000px 0;
 }
@@ -140,10 +148,12 @@ body {
    z-index: 5;
    transition: all 6.8s;
 }
+
 .detail-car:hover::before,
 .detail-car:hover::after {
    rotate: -360deg;
 }
+
 .detail-car::before {
    top: 390px;
    left: 190px;
@@ -279,11 +289,13 @@ body {
    height: 140px;
    translate: 560px -1770px;
 }
+
 .detail-car__top-glass {
    width: 140px;
    height: 140px;
    translate: 670px -1910px;
 }
+
 .detail-car__front-bamper {
    translate: 130px -1700px;
    background-color: #545151;
@@ -291,6 +303,7 @@ body {
    height: 50px;
    border-radius: 40% 0% 0% 20% / 36% 97% 0% 24%;
 }
+
 .detail-car__back-bamper {
    border-radius: 0% 34% 52% 0% / 36% 44% 28% 24%;
    width: 50px;
@@ -298,6 +311,7 @@ body {
    translate: 1280px -1755px;
    background-color: #545151;
 }
+
 .detail-car__back-light {
    border-radius: 50%;
    border: 1px solid #000;
@@ -327,4 +341,61 @@ body {
 
 .detail-car__door-handle:hover {
    rotate: -15deg;
+}
+
+/* ========================================== */
+
+.experiment {}
+
+.experiment__container {
+}
+
+.experiment__title {
+}
+
+.experiment__block{
+   background-color: rgba(73, 164, 12, 0.464);
+   border: 3px solid #0749a5;
+   box-shadow: 0px 0px 16px 14px rgba(0, 0, 0, 0.53);
+   border-radius: 32px;
+   width: 400px;
+   height: 400px;
+   transition: all 0.6s;
+}
+.experiment__block:not(:last-child) {
+   margin-bottom: 48px;
+}
+
+.experiment__block--translate{
+}
+.experiment__block--translate:hover {
+   translate: 100px 40px;
+}
+
+.experiment__block--rotate:hover{
+   rotate: 45deg;
+}
+
+.experiment__block--rotateX{
+}
+
+.experiment__block--rotateX:hover {
+   transform: rotate3d(1, 1, 1, 95deg);
+}
+
+.experiment__block--skew{
+
+}
+
+.experiment__block--skew:hover{
+   transform: skew( 15deg, 25deg);
+   rotate: 860deg;
+}
+
+.experiment__block--scale {
+
+}
+
+.experiment__block--scale:hover{
+   transform: scaleX(0);
 }
