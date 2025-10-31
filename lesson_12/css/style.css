@@ -585,6 +585,8 @@ body {
 .head {
 
    position: relative;
+   width: 400px;
+   height: 400px;
 }
 
 .head__circle {
