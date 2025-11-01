@@ -137,11 +137,12 @@ body {
    scale: 0.5;
    transform-origin: right;
    translate: -20%;
-   animation-direction: alternate;
-   animation-iteration-count: 2;
-   /* animation-fill-mode: forwards; */
-   animation-name: detail-car;
+   animation: detail-car 4s ease 2 alternate, move 2s ease 1 normal 8s forwards ;
+   /* animation-name: detail-car;
    animation-duration: 4s;
+   animation-iteration-count: 2;
+   animation-direction: alternate; */
+   /* animation-fill-mode: forwards; */
    /* transition: translate 5s; */
 }
 
@@ -155,51 +156,15 @@ body {
       transform: translateY(80%);
    }
 }
+@keyframes move {
+   0% {}
 
-/*  */
-/* .detail-car::before,
-.detail-car::after {
-   content: "";
-   position: absolute;
-   width: 200px;
-   height: 200px;
-   border-radius: 50%;
-   background-color: #747474;
-   border: 16px dashed #000;
-   z-index: 5;
-   /* transition: all 6.8s; */
-/* } */
-/*  */
-/* .detail-car:hover::before,
-.detail-car:hover::after {
-   rotate: -360deg;
-} */
 
-/* .detail-car::before {
-   content: "";
-   position: absolute;
-   width: 200px;
-   height: 200px;
-   border-radius: 50%;
-   background-color: #747474;
-   border: 16px dashed #000;
-   z-index: 5;
-   top: 390px;
-   left: 190px;
-} */
+   100% {
+      transform: translateX(-3500px);
+   }
+}
 
-/* .detail-car::after {
-   top: 390px;
-   left: 1000px;
-   content: "";
-   position: absolute;
-   width: 200px;
-   height: 200px;
-   border-radius: 50%;
-   background-color: #747474;
-   border: 16px dashed #000;
-   z-index: 5;
-} */
 
 .detail-car__top,
 .detail-car__frontal,
@@ -319,12 +284,23 @@ body {
    top: 50%;
    left: 50%;
    translate: -55% 0px;
-   animation-direction: alternate;
-   animation-iteration-count: 2;
-   animation-name: whel;
+   animation: whel 4s linear 2 alternate, rotate 2s ease 2 alternate 8s; 
+   /* animation-name: whel;
    animation-duration: 4s;
-   /*  */
    animation-timing-function: linear;
+   animation-iteration-count: 2;
+   animation-direction: alternate; */
+   /*  */
+   
+}
+
+@keyframes rotate {
+   0%{
+
+   }
+   100%{
+      rotate:-860deg;
+   }
 }
 
 .detail-car__back-wing {
@@ -516,14 +492,13 @@ body {
    background-color: #747474;
    border: 16px dashed #000;
    z-index: 5;
-   /* left: -90px; */
    right: -30px;
    top: -30px;
+   animation:rotate 2s ease 2 alternate 8s;
 }
 
 @keyframes left-leg {
    0% {
-      /* rotate: -45deg; */
    }
 
    100% {
@@ -812,20 +787,6 @@ body {
    animation-timing-function: linear;
 }
 
-/* 
-.head__eyes::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 50px;
-   width: 50px;
-   height: 50px;
-   background-color: #00f2ff;
-   z-index: 6;
-}
-.head__eyes::after {
-
-} */
 
 .head__antenna {
    position: absolute;
@@ -906,17 +867,6 @@ body {
    }
 }
 
-
-/* 
-@keyframes left-hand {
-   0% {}
-
-   100% {
-      width: 300px;
-      rotate: 330deg;
-      translate: -260px 190px;
-   }
-} */
 
 @keyframes front-wing {
    0% {}
