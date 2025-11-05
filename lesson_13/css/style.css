@@ -214,7 +214,7 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   flex-basis: 1 1 380px;
+   flex-basis: 380px;
 
 }
 
