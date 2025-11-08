@@ -403,15 +403,14 @@ body {
    animation-name: shake;
    animation-duration: 2.5s;
    animation-iteration-count: infinite;
-   animation-fill-mode: ease-in-out;
    animation-direction: alternate;
 }
 @keyframes shake{
    0%{
-      /* rotate: -1deg; */
+      rotate: -3deg;
    }
    100%{
-      rotate: 5deg;
+      rotate: 3deg;
    }
 }
 /* ================================================= */
