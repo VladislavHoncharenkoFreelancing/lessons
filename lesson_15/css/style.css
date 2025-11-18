@@ -638,8 +638,7 @@ body {
    align-self: flex-end;
    position: relative;
    z-index: 2;
-   padding-left: 60px;
-   padding-bottom: 60px;
+   padding: 60px;
    max-width: 230px;
    font-size: 32px;
    font-weight: 800;
