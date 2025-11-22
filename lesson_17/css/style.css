@@ -625,8 +625,9 @@ body {
 @media (max-width: 500px) {
    .banner__items {
       grid-template-columns: auto;
-      gap: 20px;
+      grid-template-rows: repeat(2, 1fr);
    }
+
 }
 
 .banner__item {}
@@ -664,6 +665,7 @@ body {
 
    .item-banner {
       padding: 20px;
+      min-height: 450px;
    }
 }
 
