@@ -179,9 +179,6 @@ body {
    position: relative;
 }
 
-.actions-header__item--cart::before {
-   background: url("../img/shopping-bag.svg");
-}
 
 .icon-menu {
    display: none;
@@ -258,12 +255,6 @@ body {
       min-height: 70px;
    }
 
-   .actions-header__item--cart::before,
-   .actions-header__item--love::before {
-      top: 2px;
-      left: 2.5px;
-
-   }
 
       .action-header__picture::after {
       content: "";
