@@ -107,7 +107,7 @@ body {
 
 .nav-header {
    display: flex;
-   flex: 1 1 350px;
+   /* flex: 1 1 350px; */
 }
 
 .nav-header__list {
@@ -158,30 +158,23 @@ body {
 }
 
 .actions-header__item {
+   display: flex;
+   gap: 4px;
+   align-items: center;
+   /* position: relative; */
+}
+.action-header__picture{
    position: relative;
+   flex-shrink: 0;
 }
-
-.actions-header__item--cart::before,
-.actions-header__item--love::before {
-   content: "";
-   position: absolute;
-   top: 0px;
-   left: 0px;
-   width: 20px;
-   height: 20px;
-
-}
-
-.actions-header__item--love::before {
-   background: url("../img/heart.svg");
+.actions-header__image {
+   aspect-ratio: 1;
 }
 
 .actions-header__link {
-   padding-left: 24px;
    font-size: 16px;
    font-weight: 700;
    line-height: 1.25;
-   /* 20/16 */
    text-transform: uppercase;
    position: relative;
 }
@@ -194,7 +187,7 @@ body {
    display: none;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1215px) {
    .header__body {
       gap: 10px 40px;
       min-height: 130px;
@@ -207,6 +200,22 @@ body {
 
    .actions-header__list {
       column-gap: 22px;
+   }
+}
+
+@media (max-width: 1150px) {
+   .header__body {
+      gap: 10px 40px;
+      min-height: 130px;
+   }
+
+   .nav-header__list {
+      column-gap: 18px;
+
+   }
+
+   .actions-header__list {
+      column-gap: 18px;
    }
 }
 
@@ -254,6 +263,22 @@ body {
       top: 2px;
       left: 2.5px;
 
+   }
+
+      .action-header__picture::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0%;
+      height: 2px;
+      background-color: #2f302c;
+      transition: all 0.4s;
+   }
+
+      .action-header__picture:hover::after {
+      width: 100%;
    }
 }
 
@@ -364,12 +389,8 @@ body {
 
    .actions-header__link {
       display: block;
-      width: 25px;
-      aspect-ratio: 1;
-      padding-left: 0;
       font-size: 0;
       line-height: 1;
-      background-size: contain;
    }
 
    [data-menu-open] .icon-menu span {
@@ -395,7 +416,6 @@ body {
 
    .nav-header {
       justify-content: center;
-      /* align-items: center; */
    }
 
    .nav-header__list {
@@ -447,7 +467,6 @@ body {
    display: flex;
    flex-direction: column;
    justify-self: flex-end;
-   /* align-items: center; */
    max-width: 518px;
 }
 
@@ -459,7 +478,6 @@ body {
    font-size: 20px;
    font-weight: 700;
    line-height: 1.40;
-   /* 28/20 */
 
    text-transform: uppercase;
 }
@@ -479,7 +497,6 @@ body {
    font-size: 16px;
    font-weight: 500;
    line-height: 1.25;
-   /* 20/16 */
 }
 
 .hero__text p:not(:last-child) {
@@ -492,12 +509,11 @@ body {
    font-family: "Montserrat", sans-serif;
    font-weight: 800;
    line-height: 1.04;
-   /* 100/96 */
    text-transform: uppercase;
    margin-bottom: 16px;
 }
 
-.hero__title + .decore-line {
+.hero__title+.decore-line {
    width: 61%;
    height: 1px;
    max-width: 308px;
