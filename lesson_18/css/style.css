@@ -106,6 +106,7 @@ body {
       padding-left: 30px;
    }
 }
+
 /* =====width>=1550px====== */
 @media (width >=1440px) {
 
@@ -117,7 +118,7 @@ body {
 
    .flower-single-r {
       background-image: url("../img/flower-right.svg");
-      background-position: 100% 130% ;
+      background-position: 100% 130%;
       background-repeat: no-repeat;
    }
 
@@ -127,6 +128,7 @@ body {
       background-repeat: no-repeat;
    }
 }
+
 /* =============== */
 .footer {}
 
@@ -138,10 +140,12 @@ body {
    transition: color 0.4s;
    padding: 15px;
 }
+
 .footer__link:hover {
    color: #ba936f;
    text-decoration: underline;
 }
+
 /* ========================= HEADER  ============================ */
 
 .header {}
@@ -463,11 +467,24 @@ body {
       margin-bottom: 40px;
    }
 
-   .hero__link,
+   .hero__link {
+      align-self: center;
+      display: none;
+   }
+
    .hero__picture {
       align-self: center;
    }
 
+   .hero__link--hidden {
+      display: inline-flex;
+      align-self: center;
+   }
+      .hero__picture {
+         display: flex;
+         gap: 21px;
+         flex-direction: column;
+      }
 }
 
 @media (max-width: 450px) {
@@ -477,23 +494,10 @@ body {
       top: 0;
       left: 0;
    }
-
-   .hero__text,
-   .hero__link {
+   .hero__text {
       display: none;
    }
 
-
-   .hero__link--hidden {
-      display: inline-flex;
-      align-self: center;
-   }
-
-   .hero__picture {
-      display: flex;
-      gap: 21px;
-      flex-direction: column;
-   }
 }
 
 /* ======================== ANYTIME SECTION =============================== */
@@ -787,13 +791,16 @@ body {
    padding-top: 10px;
    padding-bottom: 10px;
 }
+
 .content-shedule__link {
    transition: all 0.4s;
 }
-.content-shedule__link:hover{
+
+.content-shedule__link:hover {
    scale: 1.02;
    color: #d09b68;
 }
+
 .content-shedule__table td:nth-child(3) {
    text-align: end;
 }
