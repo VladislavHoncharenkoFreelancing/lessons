@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css">
-  <title>lesson 17</title>
+  <title>lesson 18</title>
 </head>
 
 <body>
-  <header class="header">
+  <header id="toTop" class="header">
     <div class="header__container">
       <div class="header__body">
         <figure class="header__picture">
@@ -30,7 +30,7 @@
     </div>
   </header>
   <main>
-    <section class="hero hero--padding">
+    <section class="hero hero--padding flower-double">
       <div class="hero__container">
         <div class="hero__body">
           <article class="hero__content">
@@ -46,19 +46,163 @@
                 world around us.
               </p>
             </div>
-            <a target="_blank" href="#" class="hero__link">Read More <img src="img/arrow.svg" alt="Image"></a>
+            <a target="_blank" href="#" class="hero__link">
+              <img src="img/circle.svg" alt="circle"><span>Read More <img src="img/arrow.svg" alt="Image"></span>
+            </a>
           </article>
-          <figure class="hero__picture">
+          <div class="hero__picture">
             <picture>
               <source srcset="img/hero/hero-image-1x.webp 1x, img/hero/hero-image-2x.webp 2x" type="image/webp">
               <img class="hero__image" src="img/hero/hero-image.jpg" alt="A woman practices yoga in a bright studio.">
             </picture>
-          </figure>
+            <a target="_blank" href="#" class="hero__link hero__link--hidden">
+              <img src="img/circle.svg" alt="circle"><span>Read More <img src="img/arrow.svg" alt="Image"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="anytime anytime--padding flower-single-r">
+      <div class="anytime__container">
+        <div class="anytime__body">
+          <div class="anytime__picture">
+            <picture>
+              <source srcset="img/anytime/01.webp 1x, img//anytime/02.webp 2x" type="image/webp">
+              <img class="anytime__image" src="img/anytime/01.jpg" alt="Woman meditating in lotus position">
+            </picture>
+          </div>
+          <article class="anytime__content content-anytime">
+            <h2 class="content-anytime__title title">Practice Anytime, Anywhere with our Online Classes</h2>
+            <div class="content-anytime__text">
+              <p>Online yoga classes can range from pre-recorded sessions to live-streamed classes with a teacher, and
+                can offer a
+                variety of styles and levels to suit individual preferences and needs. With online yoga, practitioners
+                can have the
+                flexibility to create their own personalized practice and fit it into their lifestyle.</p>
+              <p>Are you worried about whether this form will suit you?<br>
+                <strong>First lesson - free!</strong>
+              </p>
+            </div>
+            <a href="#" class="content-anytime__button button">trial Lession</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="lessons lessons--padding">
+      <div class="lessons__container">
+        <div class="lessons__body">
+          <h2 class="lessons__title title">Our lessons</h2>
+          <div class="lessons__text">
+            <p>
+              Yoga lessons typically involve physical postures, breathing exercises, and meditation to promote physical
+              strength,
+              flexibility, reduce stress, and enhance well-being. Classes can vary in style and intensity, and it's
+              essential to
+              consult with a qualified yoga teacher before starting any practice.
+            </p>
+          </div>
+          <div class="lessons__items items-lesson">
+            <a class="items-lesson__item" href="#">
+              <figure class="items-lesson__picture">
+                <picture>
+                  <source srcset="img/lessons/01.webp 1x, img/lessons/01-x2 2x" type="image/webp">
+                  <img class="items-lesson__image items-lesson__image--big" src="img/lessons/01.jpg"
+                    alt="Woman in Seated Side Bend Pose (Yoga)">
+                </picture>
+                <figcaption>Yoga For Beginner</figcaption>
+              </figure>
+            </a>
+            <a class="items-lesson__item" href="#">
+              <figure class="items-lesson__picture">
+                <picture>
+                  <source srcset="img/lessons/02.webp 1x, img/lessons/02-x2 2x" type="image/webp">
+                  <img class="items-lesson__image items-lesson__image--small" src="img/lessons/02.jpg"
+                    alt="Yoga: Warrior I Pose (Virabhadrasana I)">
+                </picture>
+                <figcaption>Regular Practice</figcaption>
+              </figure>
+            </a>
+            <a class="items-lesson__item" href="#">
+              <figure class="items-lesson__picture">
+                <picture>
+                  <source srcset="img/lessons/03.webp 1x, img/lessons/03-x2 2x" type="image/webp">
+                  <img class="items-lesson__image items-lesson__image--medium" src="img/lessons/03.jpg"
+                    alt="Yoga: Half Moon Pose (Anjaneyasana)">
+                </picture>
+                <figcaption>Individual Practice</figcaption>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="shedule shedule--padding flower-single-l">
+      <div class="shedule__container">
+        <div class="shedule__body">
+          <h3 class="shedule__title title">Join to our class, see our schedule</h3>
+          <div class="shedule__text">
+            <p>Start your day energized with our early morning classes or relax and unwind during our evening sessions.
+              Join our
+              skilled instructors in our spacious studio and deepen your yoga practice while connecting with a community
+              of
+              like-minded individuals.</p>
+          </div>
+          <div class="shedule__content content-shedule">
+              <table class="content-shedule__table">
+                <tbody>
+                  <tr>
+                    <td>Mondays</td>
+                    <td class="arrow content-shedule__link"><a href="#">Hot Power Flow</a></td>
+                    <td>7:30 – 8:45 pm</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td class="arrow content-shedule__link"><a href="#">Hot PowerFlow vinyasa</a></td>
+                    <td>8:20 – 9:20 am</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td class="arrow content-shedule__link"><a href="#">Warm mindful flow</a></td>
+                    <td>4:15 – 5:45 pm</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td class="arrow content-shedule__link"><a href="#">Kundalini yoga</a></td>
+                    <td>3:30 – 4:45 pm</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td class="arrow content-shedule__link"><a href="#">Warm yin yoga</a></td>
+                    <td>2:00 – 3:15 pm</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td class="arrow content-shedule__link"><a href="#">jzt dance and yoga</a></td>
+                    <td>10:30 – 11:45 am</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td class="arrow content-shedule__link"><a href="#">Hanta yoga</a></td>
+                    <td>6:30 – 7:30 pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            <figure class="content-shedule__picture">
+              <picture>
+                <source srcset="img/schedule/01.webp 1x, img/schedule/01-x2.webp 2x" type="image/webp">
+                <img class="content-shedule__image" src="img/schedule/01.jpg" alt="Three women in sportswear are sitting on the floor.">
+              </picture>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer__container">
+      <a href="#toTop" class="footer__link">GO TOP</a>
+    </div>
+  </footer>
   <script src="js/script.js"></script>
 </body>
 
