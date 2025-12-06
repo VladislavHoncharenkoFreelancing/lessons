@@ -301,7 +301,7 @@ body {
    .header__link-logo,
    .search-header {
       position: relative;
-      z-index: 3;
+      z-index: 4;
    }
 
    .icon-menu {
@@ -359,7 +359,7 @@ body {
       top: 0;
       left: 100%;
       background-color: #f6f6f6;
-      z-index: 1;
+      z-index: 3;
       overflow: auto;
       transition: left 0.3s;
       padding: 120px 15px 30px 15px;
@@ -374,7 +374,7 @@ body {
       left: 100%;
       transition: left 0.3s;
       background-color: #fff;
-      z-index: 2;
+      z-index: 3;
    }
 
    .nav-header__list {
